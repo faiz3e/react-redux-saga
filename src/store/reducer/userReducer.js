@@ -1,5 +1,5 @@
 
-export function userReducer(state = { name: "" }, action) {
+export function userReducer(state = {  }, action) {
 
     switch (action.type) {
         case 'MSG_CHANGE':

@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div style={{ textAlign: "center", marginTop: "10rem" }}>
         <h1>App is there</h1>
-        {console.log("props:", this.props)}
+        {/* {console.log("props:", this.props)} */}
         <button onClick={() => { this.props.onIncrement() }}>increment</button>
         <button onClick={() => { this.props.getTodos() }}>Get Todos</button>
         <p>=>{this.props.math}</p>
@@ -20,7 +20,7 @@ class App extends Component {
   }
 }
 function mapState(state) {
-  { console.log(state) }
+  console.log("props in app js",state)
   return { math: state.mathReducer.value, user: state.userReducer.name }
 }
 
